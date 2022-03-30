@@ -22,30 +22,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmH-30-KOm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmH-30-KOm">
                                 <rect key="frame" x="82" y="741" width="250" height="48"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="A8P-9z-lWU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="4zq-DK-UVq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Show Text"/>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="2R7-ur-XxS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OmH-30-KOm" secondAttribute="bottom" constant="73" id="2Ey-ep-8JG"/>
                             <constraint firstItem="unc-S4-IDK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DG8-CQ-R9o"/>
                             <constraint firstItem="OmH-30-KOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G7R-0N-tFX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OmH-30-KOm" secondAttribute="bottom" constant="70" id="Pf6-iD-jtF"/>
+                            <constraint firstItem="OmH-30-KOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHf-xQ-93A"/>
+                            <constraint firstItem="OmH-30-KOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ejc-0y-0V2"/>
                             <constraint firstItem="unc-S4-IDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="lxd-ei-slc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="unc-S4-IDK" id="58H-Jf-DXQ"/>
+                        <outlet property="toggleButton" destination="OmH-30-KOm" id="hsd-fZ-7W8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="77.678571428571431"/>
+            <point key="canvasLocation" x="1183" y="-113"/>
         </scene>
     </scenes>
     <resources>
